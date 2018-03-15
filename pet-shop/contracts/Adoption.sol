@@ -7,10 +7,10 @@ contract Adoption {
     function adopt(uint petId) public returns (uint) {
         require(petId >= 0 && petId <= 15);
 
-        // Address of person/smart contract who called this function.
+        // Address of person/smart contract who called this function
         adopters[petId] = msg.sender;
 
-        return petId; // Provided as a confirmation.
+        return petId; // Provided as a confirmation
     }
 
     // Retrieving the adopters
